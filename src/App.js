@@ -8,10 +8,11 @@ import PostDetails from "./pages/PostDetails";
 import EditPost from "./pages/EditPost";
 import MyBlogs from "./pages/MyBlogs";
 import Profile from "./pages/Profile";
+import UserContextProvider from "./context/userContext";
 
 function App() {
   return (
-    <>
+    <UserContextProvider>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
@@ -22,7 +23,7 @@ function App() {
         <Route path="/myblogs/:id" element={<MyBlogs />} />
         <Route path="/profile/:id" element={<Profile />} />
       </Routes>
-    </>
+    </UserContextProvider>
   );
 }
 
