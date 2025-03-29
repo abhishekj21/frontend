@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
+// import "./index.css";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
@@ -8,7 +8,7 @@ import PostDetails from "./pages/PostDetails";
 import EditPost from "./pages/EditPost";
 import MyBlogs from "./pages/MyBlogs";
 import Profile from "./pages/Profile";
-import UserContextProvider from "./context/userContext";
+import UserContextProvider from "./context/UserContext";
 
 function App() {
   return (
